@@ -1,9 +1,9 @@
 
 # AI on IaaS++ Toolkit
 
-The AI on IaaS++ toolkit is a set of scripts, guidelines, and architectural recommendations to help data scientists and data engineers work effectively and deploy production code on Azure's AI IaaS++ stack.
+The AI on IaaS++ toolkit is a set of utility scripts, tutorials, and templates to help data scientists and data engineers work effectively and deploy production code on Azure's AI IaaS++ stack.
 
-## What is Azure's AI IaaS++ Stack?
+### What is Azure's AI IaaS++ Stack?
 Today in Azure, there are a myriad of tools and services that were designed for AI workloads. However, for a data scientist new to Azure, there are several entry points where on can start to develop and eventually deploy their AI solutions. 
 
 | Tier         | Name   | Services                                       |
@@ -14,7 +14,7 @@ Today in Azure, there are a myriad of tools and services that were designed for 
 
 This toolkit focuses on the middle tier illustrated in the table above.
 
-## Why use Azure's AI IaaS++ stack?
+### Why use Azure's AI IaaS++ stack?
 Customers can choose to use Azure at each layer of the stack. Each layer has its own mix of benefits and limitations. 
 
 Generally speaking, users may want to use the Azure's AI IaaS++ stack -- as opposed to Azure's AI PaaS stack -- because they want to build their AI solution in a less opinionated, more flexible & customizable, and more cloud-agnostic manner. Additionally, the tools and services in the AI IaaS++ stack tends to be more generally available (in regions) and often adheres to higher compliance and security requirements. 
@@ -26,12 +26,12 @@ Generally speaking, users may want to use the Azure's AI IaaS++ stack -- as oppo
 | Flexibility & Customizibility | High | High | Low |
 | Availability | Mature | Mature | Less Mature |
 
-The table above compares IaaS, IaaS++, and PaaS in a general sense. Individual services or tools belonging to each category may not strictly adhere to the table above.
+*The table above compares IaaS, IaaS++, and PaaS in a general sense. Individual services or tools belonging to each category may not strictly adhere to the table above.
 
-## Experimentation and Model Development
+## Experimentation & Model Development
 Below are some general guidelines for how a user may use Azure's AI IaaS++ stack for experimentation and model development.
 
-## Deployment
+## Operationalization & Deployment
 Below are general guidelines for which compute platforms to use when deploying AI workloads to Azure's AI IaaS++ stack.
 
 ### Training 
