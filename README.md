@@ -19,7 +19,7 @@ Customers can choose to use Azure at each layer of the stack. Each layer has its
 
 Generally speaking, users may want to use the Azure's AI IaaS++ stack -- as opposed to Azure's AI PaaS stack -- because they want to build their AI solution in a less opinionated, more flexible & customizable, and more cloud-agnostic manner. Additionally, the tools and services in the AI IaaS++ stack tends to be more generally available (in regions) and often adheres to higher compliance and security requirements. 
 
-| | IaaS | IaaS++ | PaaS | 
+| | IaaS | AI IaaS++ | AI PaaS | 
 | --- | --- | --- | --- |
 | Compliance & Security | Mature | Mature | Less Mature |
 | Costs | Low | Low | High |
@@ -27,6 +27,18 @@ Generally speaking, users may want to use the Azure's AI IaaS++ stack -- as oppo
 | Availability | Mature | Mature | Less Mature |
 
 The table above compares IaaS, IaaS++, and PaaS in a general sense. Individual services or tools belonging to each category may not strictly adhere to the table above.
+
+## Experimentation and Model Development
+Below are some general guidelines for how a user may use Azure's AI IaaS++ stack for experimentation and model development.
+
+## Deployment
+Below are general guidelines for which compute platforms to use when deploying AI workloads to Azure's AI IaaS++ stack.
+
+### Training 
+[todo]
+
+### Scoring & Inference
+[todo]
 
 ## Contributing
 
