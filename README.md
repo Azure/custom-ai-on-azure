@@ -1,5 +1,20 @@
 
-# Contributing
+# AI on IaaS++ Toolkit
+
+The AI on IaaS++ toolkit is a set of scripts, guidelines, and architectural recommendations to help data scientists and data engineers work effectively and deploy production code on Azure's AI IaaS++ stack.
+
+## What is Azure's AI IaaS++ Stack?
+Today in Azure, there are a myriad of tools and services that were designed for AI workloads. However, for a data scientist new to Azure, there are several entry points where on can start to develop and eventually deploy their AI solutions. 
+
+| Tier         | Name   | Services                                       |
+|--------------|--------|------------------------------------------------|
+| Highest Tier | PaaS   | Databricks, AML                                |
+| **Middle Tier**  | **IaaS++** | **DSVM/DLVM, AZTK, BatchAI, AKS, Azure Functions** |
+| Lowest Tier  | IaaS   | Compute, Network, Storage                      |
+
+This toolkit focuses on the middle tier illustrated in the table above.
+
+## Contributing
 
 This project welcomes contributions and suggestions.  Most contributions require you to agree to a
 Contributor License Agreement (CLA) declaring that you have the right to, and actually do, grant us
