@@ -8,11 +8,25 @@ Today in Azure, there are a myriad of tools and services that were designed for 
 
 | Tier         | Name   | Services                                       |
 |--------------|--------|------------------------------------------------|
-| Highest Tier | PaaS   | Databricks, AML                                |
-| **Middle Tier**  | **IaaS++** | **DSVM/DLVM, AZTK, BatchAI, AKS, Azure Functions** |
+| Highest Tier | AI PaaS   | Databricks, AML                                |
+| **Middle Tier**  | **AI IaaS++** | **DSVM/DLVM, AZTK, BatchAI, AKS, Azure Functions** |
 | Lowest Tier  | IaaS   | Compute, Network, Storage                      |
 
 This toolkit focuses on the middle tier illustrated in the table above.
+
+## Why use Azure's AI IaaS++ stack?
+Customers can choose to use Azure at each layer of the stack. Each layer has its own mix of benefits and limitations. 
+
+Generally speaking, users may want to use the Azure's AI IaaS++ stack -- as opposed to Azure's AI PaaS stack -- because they want to build their AI solution in a less opinionated, more flexible & customizable, and more cloud-agnostic manner. Additionally, the tools and services in the AI IaaS++ stack tends to be more generally available (in regions) and often adheres to higher compliance and security requirements. 
+
+| | IaaS | IaaS++ | PaaS | 
+| --- | --- | --- | --- |
+| Compliance & Security | Mature | Mature | Less Mature |
+| Costs | Low | Low | High |
+| Flexibility & Customizibility | High | High | Low |
+| Availability | Mature | Mature | Less Mature |
+
+The table above compares IaaS, IaaS++, and PaaS in a general sense. Individual services or tools belonging to each category may not strictly adhere to the table above.
 
 ## Contributing
 
