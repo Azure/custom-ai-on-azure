@@ -3,7 +3,7 @@
 
 The AI on IaaS++ toolkit is a set of utility scripts, tutorials, and templates to help data scientists and data engineers work effectively and deploy production code on Azure's AI IaaS++ stack.
 
-### What is Azure's AI IaaS++ Stack?
+### What is Azure's AI IaaS++ stack?
 Today in Azure, there are a myriad of tools and services that were designed for AI workloads. However, for a data scientist new to Azure, there are several entry points where on can start to develop and eventually deploy their AI solutions. 
 
 | Tier         | Name   | Services                                       |
@@ -31,7 +31,7 @@ Generally speaking, users may want to use the Azure's AI IaaS++ stack -- as oppo
 ## Experimentation & Model Development
 Below are some general guidelines for how a user may use Azure's AI IaaS++ stack for experimentation and model development.
 
-## Operationalization & Deployment
+## Operationalization & Model Deployment
 Below are general guidelines for which compute platforms to use when deploying AI workloads to Azure's AI IaaS++ stack.
 
 ### Training 
