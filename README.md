@@ -3,7 +3,20 @@
 
 The AI on IaaS++ toolkit is a set of utility scripts, tutorials, and templates to help data scientists and data engineers work effectively and deploy production code on Azure's AI IaaS++ stack.
 
-### What is Azure's AI IaaS++ stack?
+## Table of Content
+0. [Introduction](#introduction)
+    - [What is Azure's AI IaaS++ stack?](#what)
+    - [Why use Azure's AI IaaS++ stack?](#why)
+1. [Experimentation & Model Development](#experimentation-&-model-development)
+2. [Operationalization & Model Deployment](#operationalization-&-model-deployment)
+3. [Choosing your Compute Platform](#choosing-your-compute-platform)
+    - [Training](#choosing-your-compute-platform-training)
+    - [Scoring & Inference](#choosing-your-compute-platform-scoring-&-inference)
+    - [Additional Considerations](#choosing-your-compute-platform-additional-considerations)
+
+## Introduction <a name="introduction"></a>
+
+### What is Azure's AI IaaS++ stack? <a name="what"></a>
 Today in Azure, there are a myriad of tools and services that were designed for AI workloads. However, for a data scientist new to Azure, there are several entry points where on can start to develop and eventually deploy their AI solutions. 
 
 | Tier         | Name   | Services                                       |
@@ -14,7 +27,7 @@ Today in Azure, there are a myriad of tools and services that were designed for 
 
 This toolkit focuses on the middle tier illustrated in the table above.
 
-### Why use Azure's AI IaaS++ stack?
+### Why use Azure's AI IaaS++ stack? <a name="why"></a>
 Customers can choose to use Azure at each layer of the stack. Each layer has its own mix of benefits and limitations. 
 
 Generally speaking, users may want to use the Azure's AI IaaS++ stack -- as opposed to Azure's AI PaaS stack -- because they want to build their AI solution in a less opinionated, more flexible & customizable, and more cloud-agnostic manner. Additionally, the tools and services in the AI IaaS++ stack tends to be more generally available (in regions) and often adheres to higher compliance and security requirements. 
@@ -28,22 +41,22 @@ Generally speaking, users may want to use the Azure's AI IaaS++ stack -- as oppo
 
 *The table above compares IaaS, IaaS++, and PaaS in a general sense. Individual services or tools belonging to each category may not strictly adhere to the table above.
 
-## Experimentation & Model Development
+## Experimentation & Model Development <a name="experimentation-&-model-development"></a>
 Below are some general guidelines for how a user may use Azure's AI IaaS++ stack for experimentation and model development.
 
-## Operationalization & Model Deployment
+## Operationalization & Model Deployment <a name="operationalization-&-model-deployment"></a>
 Below are general guidelines for which compute platforms to use when deploying AI workloads to Azure's AI IaaS++ stack.
 
-## Choosing your Compute Platform
-Below are two decision tree to provide guidance on which compute platform to use. 
+## Choosing your Compute Platform <a name="choosing-your-compute-platform"></a>
+Azure's AI IaaS++ stack offers many different flexible compute platforms. Often times it is confusing to choose which to use for the scenario at hand. Below are two decision tree to provide guidance on which compute platform to use in different scenarios. 
 
-### Training 
+### Training <a name="choosing-your-compute-platform-training"></a>
 ![Decision Tree for Experimentation & Training Workloads](assets/decision_tree_for_experimentation_and_training.png)
 
-### Scoring & Inference
+### Scoring & Inference <a name="choosing-your-compute-platform-scoring-&-inference"></a>
 ![Decision Tree for Scoring & Inference](assets/decision_tree_for_scoring_and_inference.png)
 
-### Additional Considerations
+### Additional Considerations <a name="choosing-your-compute-platform-additional-considerations"></a>
 While the above decision trees are useful for most scenarios, each of these services have limitations that may restrict what you choose. Please see the table below:
 
 | | DSVM / DLVM | AZTK | BatchAI | AKS | HDI | 
