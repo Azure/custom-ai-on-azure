@@ -35,13 +35,23 @@ Below are some general guidelines for how a user may use Azure's AI IaaS++ stack
 Below are general guidelines for which compute platforms to use when deploying AI workloads to Azure's AI IaaS++ stack.
 
 ## Choosing your Compute Platform
-Below are two decision tree to provide guidance on which compute platform to use.
+Below are two decision tree to provide guidance on which compute platform to use. 
 
 ### Training 
 ![Decision Tree for Experimentation & Training Workloads](assets/decision_tree_for_experimentation_and_training.png)
 
 ### Scoring & Inference
 ![Decision Tree for Scoring & Inference](assets/decision_tree_for_scoring_and_inference.png)
+
+### Additional Considerations
+While the above decision trees are useful for most scenarios, each of these services have limitations that may restrict what you choose. Please see the table below:
+
+| | DSVM / DLVM | AZTK | BatchAI | AKS | HDI | 
+| --- | --- | --- | --- | --- | --- |
+| GPU Support | 1 | 1 | 1 | 1 | 0 |
+| Low Priority VMs | 0 | 1 | 1 | 0 | 0 |
+| Ability to integrate with Azure Functions | 1 | 1 | 1 | 1 | 0 |
+| Machine Learning Server | 0 | 0 | 0 | 0 | 1 |
 
 ## Contributing
 
