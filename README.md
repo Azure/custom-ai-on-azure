@@ -34,8 +34,11 @@ Below are some general guidelines for how a user may use Azure's AI IaaS++ stack
 ## Operationalization & Model Deployment
 Below are general guidelines for which compute platforms to use when deploying AI workloads to Azure's AI IaaS++ stack.
 
+## Choosing your Compute Platform
+Below are two decision tree to provide guidance on which compute platform to use.
+
 ### Training 
-[todo]
+![Decision Tree for Training Workloads](assets/decision_tree_for_training.png?raw=true "Decision Tree for Training Workloads")
 
 ### Scoring & Inference
 [todo]
