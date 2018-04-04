@@ -38,10 +38,10 @@ Below are general guidelines for which compute platforms to use when deploying A
 Below are two decision tree to provide guidance on which compute platform to use.
 
 ### Training 
-<img src="assets/decision_tree_for_training.png" alt="Decision Tree for Training Workloads" style="max-width: 360px;"/>
+![Decision Tree for Experimentation & Training Workloads](assets/decision_tree_for_experimentation_and_training.png)
 
 ### Scoring & Inference
-[todo]
+![Decision Tree for Scoring & Inference](assets/decision_tree_for_scoring_and_inference.png)
 
 ## Contributing
 
