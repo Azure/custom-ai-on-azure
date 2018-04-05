@@ -45,7 +45,7 @@ Generally speaking, users may want to use the Azure's AI IaaS++ stack -- as oppo
 ## 1 Experimentation & Model Development <a name="experimentation-&-model-development"></a>
 When experimenting and developing a model, data scientists want to optimize their own time and reduce the friction of installing software, provision infrastructure, and moving data. 
 
-[TODO]
+Visit the [tutorial page for experimentation](tutorials_experimentation) for more details.
 
 ## 2 Operationalization & Model Deployment <a name="operationalization-&-model-deployment"></a>
 When deploying your model and operationalizing your AI solution in Azure, it can confusing to choose from Azure's vast set of resources, services, and tools. 
