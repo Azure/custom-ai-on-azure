@@ -4,7 +4,7 @@ These tutorials are categorized by scenario and thus often contains multiple Azu
 ## [0] Using Azure Functions to provision a DSVM for periodic batch scoring
 Azure functions can be used with the DSVM to automate your batch scoring jobs.
 
-- [[0_0] Deploy your DSVM from Azure Functions](https://www.google.com)
+- [0_0] Deploy your DSVM from Azure Functions
 - [0_1] Automate your Azure Function to read & write data from Blob Storage
 
 Please see this architecture [link] reference for a full end-to-end batch scoring sceanrio with Spark on AZTK.
@@ -12,7 +12,7 @@ Please see this architecture [link] reference for a full end-to-end batch scorin
 ## [1] Deploy your Spark model to AZTK for batch processing/training/scoring
 AZTK allows you to deploy, manage and run Apache Spark clusters in a simple and cost-efficient way.
 
-- [[1_0] Deploy a CPU or GPU enabled AZTK Spark cluster from your local machine](/1_0.md)
+- [[1_0] Deploy a CPU or GPU enabled AZTK Spark cluster from your local machine](/tutorials_operationalization/1_0.md)
 - [1_1] Setting up your AZTK Spark cluster to read/write data from Azure Blob
 - [1_2] Use AZTK's interactive-mode to run jupyter notebooks and the Spark UI
 - [1_3] Use Azure Functions to automate your AZTK batch job 
