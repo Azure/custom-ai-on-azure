@@ -42,10 +42,21 @@ Generally speaking, users may want to use the Azure's AI IaaS++ stack -- as oppo
 *The table above compares IaaS, IaaS++, and PaaS in a general sense. Individual services or tools belonging to each category may not strictly adhere to the table above.
 
 ## Experimentation & Model Development <a name="experimentation-&-model-development"></a>
-Below are some general guidelines for how a user may use Azure's AI IaaS++ stack for experimentation and model development.
+When experimenting and developing a model, data scientists want to optimize their own time and reduce the friction of installing software, provision infrastructure, and moving data. 
+
+[TODO]
 
 ## Operationalization & Model Deployment <a name="operationalization-&-model-deployment"></a>
-Below are general guidelines for which compute platforms to use when deploying AI workloads to Azure's AI IaaS++ stack.
+When deploying your model and operationalizing your AI solution in Azure, it can confusing to choose from Azure's vast set of resources, services, and tools. 
+
+Below are a few canonical scanrios:
+- Deploy a web-service (flask) on your DSVM for real-time scoring [TODO]
+- Using Azure Functions to provision a DSVM for periodic batch scoring [TODO]
+
+Below are a few canonical __scale-out__ scenarios:
+- Deploy your Spark model to AZTK for batch processing/training/scoring [TODO]
+- Deploy your Tensorflow model to BatchAI for batch training using GPUs [TODO]
+- Deploy your Tensorflow model to AKS for real-time request/response scoring [TODO]
 
 ## Choosing your Compute Platform <a name="choosing-your-compute-platform"></a>
 Azure's AI IaaS++ stack offers many different flexible compute platforms. Often times it is confusing to choose which to use for the scenario at hand. Below are two decision tree to provide guidance on which compute platform to use in different scenarios. 
