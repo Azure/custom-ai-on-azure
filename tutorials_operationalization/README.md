@@ -20,6 +20,8 @@ AZTK allows you to deploy, manage and run Apache Spark clusters in a simple and 
 
 Please see this architecture [link] reference for a full end-to-end batch scoring sceanrio with Spark on AZTK.
 
+For additional details about AZTK, please visit the [AZTK repo](https://www.github.com/azure/aztk).
+
 ## [2] Deploy your DL model to BatchAI for batch scoring
 BatchAI allows you to deploy, manage and run compute intensive deep learning jobs in a cost-efficient way.
 
