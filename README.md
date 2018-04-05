@@ -49,14 +49,16 @@ When experimenting and developing a model, data scientists want to optimize thei
 ## Operationalization & Model Deployment <a name="operationalization-&-model-deployment"></a>
 When deploying your model and operationalizing your AI solution in Azure, it can confusing to choose from Azure's vast set of resources, services, and tools. 
 
-Below are a few canonical scanrios:
-- Deploy a web-service (flask) on your DSVM for real-time scoring [TODO]
-- Using Azure Functions to provision a DSVM for periodic batch scoring [TODO]
+Below are a few canonical __single-node__ scenarios:
+- Deploy a web-service (flask) on your DSVM for real-time scoring
+- Using Azure Functions to provision a DSVM for periodic batch scoring
 
 Below are a few canonical __scale-out__ scenarios:
-- Deploy your Spark model to AZTK for batch processing/training/scoring [TODO]
-- Deploy your Tensorflow model to BatchAI for batch training using GPUs [TODO]
-- Deploy your Tensorflow model to AKS for real-time request/response scoring [TODO]
+- Deploy your Spark model to AZTK for batch processing/training/scoring
+- Deploy your Tensorflow model to BatchAI for batch training using GPUs
+- Deploy your Tensorflow model to AKS for real-time request/response scoring
+
+Visit the [tutorial page for operationalization](tutorials_operationalization) for more details.
 
 ## Choosing your Compute Platform <a name="choosing-your-compute-platform"></a>
 Azure's AI IaaS++ stack offers many different flexible compute platforms. Often times it is confusing to choose which to use for the scenario at hand. Below are two decision tree to provide guidance on which compute platform to use in different scenarios. 
