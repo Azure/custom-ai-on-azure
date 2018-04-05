@@ -1,5 +1,6 @@
 
 # AI on IaaS++ Toolkit
+[repo is under construction]
 
 The AI on IaaS++ toolkit is a set of utility scripts, tutorials, and templates to help data scientists and data engineers work effectively and deploy production code on Azure's AI IaaS++ stack.
 
