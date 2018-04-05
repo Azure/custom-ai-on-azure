@@ -1,4 +1,4 @@
-# Tutorials 
+# Tutorials for Operationalization
 These tutorials are categorized by scenario and thus often contains multiple Azure components. 
 
 ## Using Azure Functions to provision a DSVM for periodic batch scoring
