@@ -1,3 +1,10 @@
+# This script takes in 3 arguments --name (-n), --password (-p), and --location (-l)
+# 
+# Using these arguments, this script will generate all the required resources for running AZTK
+# All output will be stored on stdout.txt in your current directory
+# This script will output the information you need to run AZTK.
+#   specifically, it will generate the information to copy/paste into the .aztk/secrets.yaml file
+
 #!/bin/bash
 
 # Parse arguments
@@ -44,15 +51,15 @@ SERVICE_PRINCIPAL_PASSWORD=$ARG_PASSWORD
 
 # create a resource group
 echo "Creating your resource group, $RESOURCE_GROUP_NAME"
-az group create -n $RESOURCE_GROUP_NAME -l $LOCATION
+az group create -n $RESOURCE_GROUP_NAME -l $LOCATION >> stdout.txt
 
 # create your batch account in said resource group
 echo "Creating your batch account, $BATCH_ACCOUNT_NAME"
-az batch account create -l westus -n $BATCH_ACCOUNT_NAME -g $RESOURCE_GROUP_NAME
+az batch account create -l westus -n $BATCH_ACCOUNT_NAME -g $RESOURCE_GROUP_NAME >> stdout.txt
 
 # create your storage account in said resource group
 echo "Creating your storage account, $STORAGE_ACCOUNT_NAME"
-az storage account create -n $STORAGE_ACCOUNT_NAME -g $RESOURCE_GROUP_NAME -l $LOCATION
+az storage account create -n $STORAGE_ACCOUNT_NAME -g $RESOURCE_GROUP_NAME -l $LOCATION >> stdout.txt
 
 # set resource ids for your batch account & storage account
 export AZURE_STORAGE_ACCOUNT_RESOURCE_ID=`az storage account show -n $STORAGE_ACCOUNT_NAME -g $RESOURCE_GROUP_NAME | jq '.id' | tr -d '"'`
@@ -60,13 +67,14 @@ export AZURE_BATCH_ACCOUNT_RESOURCE_ID=`az batch account show -n $BATCH_ACCOUNT_
 
 # create your service principal and give it contributor access to your batch and storage accounts
 echo "Creating your service principal, $SERVICE_PRINCIPAL_NAME"
-az ad sp create-for-rbac -n $SERVICE_PRINCIPAL_NAME --role contributor --password $SERVICE_PRINCIPAL_PASSWORD --years 2 --scopes $AZURE_BATCH_ACCOUNT_RESOURCE_ID $AZURE_STORAGE_ACCOUNT_RESOURCE_ID
+az ad sp create-for-rbac -n $SERVICE_PRINCIPAL_NAME --role contributor --password $SERVICE_PRINCIPAL_PASSWORD --years 2 --scopes $AZURE_BATCH_ACCOUNT_RESOURCE_ID $AZURE_STORAGE_ACCOUNT_RESOURCE_ID >> stdout.txt
 
 # set tenant and app ids
 export AZURE_SP_TENANT_ID=`az ad sp show --id http://$SERVICE_PRINCIPAL_NAME | jq '.additionalProperties.appOwnerTenantId' | tr -d '"'`
 export AZURE_SP_APP_ID=`az ad sp show --id http://$SERVICE_PRINCIPAL_NAME | jq '.appId' | tr -d '"'`
 
 # Print text to copy/paste 
+echo "----------------------------------------------"
 echo "Please copy and paste the following lines into your .aztk/secrets.yaml under "service_principal:""
 echo "----------------------------------------------"
 echo "tenant_id: $AZURE_SP_TENANT_ID"
