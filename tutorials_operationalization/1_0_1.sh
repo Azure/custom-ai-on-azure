@@ -71,7 +71,7 @@ echo "Please copy and paste the following lines into your .aztk/secrets.yaml und
 echo "----------------------------------------------"
 echo "tenant_id: $AZURE_SP_TENANT_ID"
 echo "client_id: $AZURE_SP_APP_ID"
-echo "crediential: $SERVICE_PRINCIPAL_PASSWORD"
+echo "credential: $SERVICE_PRINCIPAL_PASSWORD"
 echo "batch_account_resource_id: $AZURE_BATCH_ACCOUNT_RESOURCE_ID"
 echo "storage_account_resource_id: $AZURE_STORAGE_ACCOUNT_RESOURCE_ID"
 echo "----------------------------------------------"
