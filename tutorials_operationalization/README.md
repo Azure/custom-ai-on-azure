@@ -33,5 +33,6 @@ BatchAI allows you to deploy, manage and run compute intensive deep learning job
 - [2_1] Mount a fileshare to your BatchAI cluster
 - [2_2] Set up Tensorboard on BatchAI for monitoring your run history
 - [2_3] Use Azure Functions to automate your DL jobs 
+- [2_4] Use Azure Data Factory to automate your DL jobs
 
 Please see this architecture [link] reference for a full end-to-end batch scoring sceanrio with Tensorflow on BatchAI.
