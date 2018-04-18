@@ -36,3 +36,18 @@ BatchAI allows you to deploy, manage and run compute intensive deep learning job
 - [2_4] Use Azure Data Factory to automate your DL jobs
 
 Please see this architecture [link] reference for a full end-to-end batch scoring sceanrio with Tensorflow on BatchAI.
+
+For an End-to-End Anomaly Detection scenario using Azure Batch AI, please refer to this: https://github.com/saidbleik/batchai_mm_ad
+
+## [3] Deploy your DL model to AKS for real-time request/response workloads
+Deploying to AKS is most suited for real-time request/response workloads. 
+
+See this repo (https://github.com/Microsoft/AKSDeploymentTutorial) to talk through the following steps:
+- Model development where we load the pretrained model and test it by using it to score images
+- Developing the interface our Flask app will use to load and call the model
+- Building the Docker Image with our Flask REST API and model
+- Testing our Docker image before deployment
+- Creating our Kubernetes cluster and deploying our application to it
+- Testing the deployed model
+- Testing the throughput of our model
+
