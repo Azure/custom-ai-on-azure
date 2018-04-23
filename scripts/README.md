@@ -2,14 +2,13 @@
 The following tutorials are created by data scientists and data engineers in Microsoft. These tutorials were developed along real customer scenarios. They cover end-to-end scenarios covering both the data science portions and how these solutions would be operationalized. 
 
 ### [Deploy your DL model to AKS for real-time request/response workloads](https://github.com/Microsoft/AKSDeploymentTutorial)
-Date: 4/23/2018
-Author(s): Fidan Boylu Uz & Mathew Salvaris
-
-This tutorial goes through step-by-step instructions on how to deploy a pretrained deep learning model on a GPU enabled Kubernetes cluster.
-
-Azure Technologies: AKS, GPU-enabled VMs
-
-Open Source Technologoies: Tensorflow, Keras, Docker, Flask
+| | |
+| :-- | --- |
+| Date of Posting  | 4/23/2018 |
+| Author(s) | Fidan Boylu Uz & Mathew Salvaris | 
+| Azure services | AKS, N-series VMs | 
+| Opensource tools | Tensorflow, Keras, Docker, Flask |
+| Description | This tutorial goes through step-by-step instructions on how to deploy a pretrained deep learning model on a GPU enabled Kubernetes cluster. |
 
 ---
 
@@ -22,27 +21,25 @@ When adding your tutorial to this page, make sure you follow the below conventio
 
 ```
 ### [<My Tutorial Name>](url_to_tutorial)
-Date: <date of posting>
-Author(s): <list of authors>
-
-<A sentence describing what your tutorial does>
-
-Azure Technologies: <comma separated list of Azure technologies>
-
-Open Source Technologies: <comma separated list of opensourced technologies>
+| | |
+| :-- | --- |
+| Date of Posting  | <date of posting in MM/DD/YYYY format> |
+| Author(s) | <comma separated list of authors> | 
+| Azure services | <comma separated list of Azure technologies> | 
+| Opensource tools | <comma separated list of open source technologies> |
+| Description | <A sentence describing what your tutorial does> |
 ```
 
 Here's an example:
 ```
 ### [Deploy your DL model to AKS for real-time request/response workloads](https://github.com/Microsoft/AKSDeploymentTutorial)
-Date: 4/23/2018
-Author(s): Fidan Boylu Uz & Mathew Salvaris
-
-This tutorial goes through step-by-step instructions on how to deploy a pretrained deep learning model on a GPU enabled Kubernetes cluster.
-
-Azure Technologies: AKS, GPU-enabled VMs
-
-Open Source Technologoies: Tensorflow, Keras, Docker, Flask
+| | |
+| :-- | --- |
+| Date of Posting  | 4/23/2018 |
+| Author(s) | Fidan Boylu Uz & Mathew Salvaris | 
+| Azure services | AKS, N-series VMs | 
+| Opensource tools | Tensorflow, Keras, Docker, Flask |
+| Description | This tutorial goes through step-by-step instructions on how to deploy a pretrained deep learning model on a GPU enabled Kubernetes cluster. |
 ```
 
 __Content__
