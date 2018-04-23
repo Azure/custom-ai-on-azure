@@ -64,18 +64,11 @@ See this repo (https://github.com/Microsoft/AKSDeploymentTutorial) to talk throu
 ## How to add tutorial to this repository
 In order to add a tutorial to this repo, you must make a pull-request. The tutorial should follow the below guidelines:
 
-__Content__
-
-The content of the tutorial must include a real AI scenario, showing how the model is created as well as how the model is deployed into Azure.
-
-__Notebooks__ 
-
-In your tutorial, your notebooks should be in a state where all the cells are already executed. Each cell should be properly annotated such that a reader without prior context will be able to use each notebook, or your set of notebooks, independently. You must also make sure that no private keys are left on the notebook.
-
 __Adding your tutorial to this page__
 
 When adding your tutorial to this page, make sure you follow the below convention:
-```md
+
+```
 ### [<My Tutorial Name>](url_to_tutorial)
 [Date of Posting]
 
@@ -99,3 +92,11 @@ This tutorial goes through step-by-step instructions on how to deploy a pretrain
 Azure Technologies: AKS, GPU-enabled VMs
 Open Source Technologoies: Tensorflow, Keras, Docker, Flask
 ```
+
+__Content__
+
+The content of the tutorial must include a real AI scenario, showing how the model is created as well as how the model is deployed into Azure. When adding your tutorial to this page, please be cognizant of the two categories on this page: __Experimentation & Model Development__ and __Operationalization & Model Deployment__ and select the appropriate category for your tutorial.
+
+__Notebooks__ 
+
+In your tutorial, your notebooks should be in a state where all the cells are already executed. Each cell should be properly annotated such that a reader without prior context will be able to use each notebook, or your set of notebooks, independently. You must also make sure that no private keys are left on the notebook.
