@@ -7,10 +7,11 @@ This repo assumes a level of proficiency in Azure and is targeted for seasoned d
 
 ## Table of Content
 1. [Introduction](#introduction)
-2. [Experimentation & Model Development](#experimentation-&-model-development)
-3. [Operationalization & Model Deployment](#operationalization-&-model-deployment)
-4. [Choosing your Compute Platform](#choosing-your-compute-platform)
-5. [Contributing](#contributing)
+2. [Scripts](#experimentation-&-model-development)
+3. [Tutorials](#operationalization-&-model-deployment)
+4. [Architectures](#choosing-your-compute-platform)
+5. [Choosing your Compute Platform](#choosing-your-compute-platform)
+6. [Contributing](#contributing)
 
 ## 1. Introduction <a name="introduction"></a>
 
@@ -63,22 +64,6 @@ Here are arhictectures.
 
 ## 5. Choosing your Compute Platform <a name="choosing-your-compute-platform"></a>
 Azure's AI IaaS++ stack offers many different flexible compute platforms. Often times it is confusing to choose which to use for the scenario at hand. Below are two decision tree to provide guidance on which compute platform to use in different scenarios. 
-
-### Training <a name="choosing-your-compute-platform-training"></a>
-![Decision Tree for Experimentation & Training Workloads](assets/decision_tree_for_experimentation_and_training.png)
-
-### Scoring & Inference <a name="choosing-your-compute-platform-scoring-&-inference"></a>
-![Decision Tree for Scoring & Inference](assets/decision_tree_for_scoring_and_inference.png)
-
-### Additional Considerations <a name="choosing-your-compute-platform-additional-considerations"></a>
-While the above decision trees are useful for most scenarios, each of these services have limitations that may restrict what you choose. Please see the table below:
-
-| | DSVM / DLVM | AZTK | BatchAI | AKS | HDI | 
-| --- | --- | --- | --- | --- | --- |
-| GPU Support | 1 | 1 | 1 | 1 | 0 |
-| Low Priority VMs | 0 | 1 | 1 | 0 | 0 |
-| Ability to integrate with Azure Functions | 1 | 1 | 1 | 1 | 0 |
-| Machine Learning Server | 0 | 0 | 0 | 0 | 1 |
 
 ## 6. Contributing <a name="contributing"></a>
 
