@@ -1,17 +1,15 @@
 # AI on IaaS++ Toolkit
-[repo is under construction]
+[repo is currently under construction]
 
-The AI on IaaS++ toolkit is a set of utility scripts, tutorials, and templates to help data scientists and data engineers work effectively and deploy production code on Azure's AI IaaS++ stack.
+The AI on IaaS++ toolkit is a set of utility scripts, tutorials, and recommended architectures to deploy production code on Azure's AI IaaS++ stack.
+
+This repo assumes a level of proficiency in Azure and is targeted for seasoned data engineers and data scientists.
 
 ## Table of Content
 1. [Introduction](#introduction)
-    - [What is Azure's AI IaaS++ stack?](#what)
-    - [Why use Azure's AI IaaS++ stack?](#why)
 2. [Experimentation & Model Development](#experimentation-&-model-development)
 3. [Operationalization & Model Deployment](#operationalization-&-model-deployment)
 4. [Choosing your Compute Platform](#choosing-your-compute-platform)
-    - [Training](#choosing-your-compute-platform-training)
-    - [Scoring & Inference](#choosing-your-compute-platform-scoring-&-inference)
     - [Additional Considerations](#choosing-your-compute-platform-additional-considerations)
 5. [Contributing](#contributing)
 
