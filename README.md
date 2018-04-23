@@ -1,19 +1,19 @@
 # AI on IaaS++ Toolkit
 The AI on IaaS++ toolkit is a set of utility scripts, tutorials, and recommended architectures to deploy production code on Azure's AI IaaS++ stack. This repo assumes a level of proficiency in Azure and is targeted for seasoned data engineers and data scientists.
 
-[__Scripts__](./scripts): 
+[__Scripts__](./scripts)
 
 A set of scripts that you can use to deploy your AI solutions on Azure's AI on IaaS++. This includes scripts for experimentation/training and operationalization/scoring.
 
-[__Tutorials__](./tutorials): 
+[__Tutorials__](./tutorials)
 
 An aggregration of tutorials created by data scientists and data engineers in Microsoft. 
 
-[__Recommended Architectures__](./architectures): 
+[__Recommended Architectures__](./architectures)
 
 An aggregation of recommended architectures that have been deployed by real Microsoft customers.
 
-[__Compute Platforms__](./compute-platforms): 
+[__Compute Platforms__](./compute-platforms)
 
 A short guide on which compute platforms in Azure to use.
 
