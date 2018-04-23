@@ -70,15 +70,13 @@ When adding your tutorial to this page, make sure you follow the below conventio
 
 ```
 ### [<My Tutorial Name>](url_to_tutorial)
-[Date of Posting]
+Date: <date of posting>
+Author(s): <list of authors>
 
-A sentence describing what your tutorial does.
+<A sentence describing what your tutorial does>
 
-A list of the toolkits and services that the tutorial uses:
-- AZTK
-- Azure Functions
-- Azure Blob Storage
-- CVTK
+Azure Technologies: <comma separated list of Azure technologies>
+Open Source Technologies: <comma separated list of opensourced technologies>
 ```
 
 Here's an example:
