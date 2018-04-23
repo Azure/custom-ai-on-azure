@@ -1,22 +1,21 @@
-
 # AI on IaaS++ Toolkit
 [repo is under construction]
 
 The AI on IaaS++ toolkit is a set of utility scripts, tutorials, and templates to help data scientists and data engineers work effectively and deploy production code on Azure's AI IaaS++ stack.
 
 ## Table of Content
-0. [Introduction](#introduction)
+1. [Introduction](#introduction)
     - [What is Azure's AI IaaS++ stack?](#what)
     - [Why use Azure's AI IaaS++ stack?](#why)
-1. [Experimentation & Model Development](#experimentation-&-model-development)
-2. [Operationalization & Model Deployment](#operationalization-&-model-deployment)
-3. [Choosing your Compute Platform](#choosing-your-compute-platform)
+2. [Experimentation & Model Development](#experimentation-&-model-development)
+3. [Operationalization & Model Deployment](#operationalization-&-model-deployment)
+4. [Choosing your Compute Platform](#choosing-your-compute-platform)
     - [Training](#choosing-your-compute-platform-training)
     - [Scoring & Inference](#choosing-your-compute-platform-scoring-&-inference)
     - [Additional Considerations](#choosing-your-compute-platform-additional-considerations)
-4. [Contributing](#contributing)
+5. [Contributing](#contributing)
 
-## 0 Introduction <a name="introduction"></a>
+## 1. Introduction <a name="introduction"></a>
 
 ### What is Azure's AI IaaS++ stack? <a name="what"></a>
 Today in Azure, there are a myriad of tools and services that were designed for AI workloads. However, for a data scientist new to Azure, there are several entry points where on can start to develop and eventually deploy their AI solutions. 
@@ -43,12 +42,12 @@ Generally speaking, users may want to use the Azure's AI IaaS++ stack -- as oppo
 
 *The table above compares IaaS, IaaS++, and PaaS in a general sense. Individual services or tools belonging to each category may not strictly adhere to the table above.
 
-## 1 Experimentation & Model Development <a name="experimentation-&-model-development"></a>
+## 2. Scripts <a name="experimentation-&-model-development"></a>
 When experimenting and developing a model, data scientists want to optimize their own time and reduce the friction of installing software, provision infrastructure, and moving data. 
 
 Visit the [tutorial page for experimentation](tutorials_experimentation) for more details.
 
-## 2 Operationalization & Model Deployment <a name="operationalization-&-model-deployment"></a>
+## 3. Tutorials <a name="operationalization-&-model-deployment"></a>
 When deploying your model and operationalizing your AI solution in Azure, it can confusing to choose from Azure's vast set of resources, services, and tools. 
 
 Below are a few canonical __single-node__ scenarios:
@@ -62,7 +61,10 @@ Below are a few canonical __scale-out__ scenarios:
 
 Visit the [tutorial page for operationalization](tutorials_operationalization) for more details.
 
-## 3 Choosing your Compute Platform <a name="choosing-your-compute-platform"></a>
+## 4. Architectures <a name=""></a>
+Here are arhictectures.
+
+## 5. Choosing your Compute Platform <a name="choosing-your-compute-platform"></a>
 Azure's AI IaaS++ stack offers many different flexible compute platforms. Often times it is confusing to choose which to use for the scenario at hand. Below are two decision tree to provide guidance on which compute platform to use in different scenarios. 
 
 ### Training <a name="choosing-your-compute-platform-training"></a>
@@ -81,7 +83,7 @@ While the above decision trees are useful for most scenarios, each of these serv
 | Ability to integrate with Azure Functions | 1 | 1 | 1 | 1 | 0 |
 | Machine Learning Server | 0 | 0 | 0 | 0 | 1 |
 
-## 4 Contributing <a name="contributing"></a>
+## 6. Contributing <a name="contributing"></a>
 
 This project welcomes contributions and suggestions.  Most contributions require you to agree to a
 Contributor License Agreement (CLA) declaring that you have the right to, and actually do, grant us

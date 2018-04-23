@@ -1,7 +1,13 @@
 # Tutorials for Operationalization
 These tutorials are categorized by scenario and thus often contains multiple Azure components. 
 
-## [0] Using Azure Functions to provision a DSVM for periodic batch scoring
+## Experimentation & Model Development
+When experimenting and developing a model, data scientists want to optimize their own time and reduce the friction of installing software, provision infrastructure, and moving data. 
+
+## Operationalization & Model Deployment <a name="operationalization-&-model-deployment"></a>
+When deploying your model and operationalizing your AI solution in Azure, it can confusing to choose from Azure's vast set of resources, services, and tools. 
+
+### [0] Using Azure Functions to provision a DSVM for periodic batch scoring
 Azure functions can be used with the DSVM to automate your batch scoring jobs.
 
 - [0_0] Deploy your DSVM from Azure Functions
@@ -9,7 +15,7 @@ Azure functions can be used with the DSVM to automate your batch scoring jobs.
 
 Please see this architecture [link] reference for a full end-to-end batch scoring sceanrio with Spark on AZTK.
 
-## [1] Deploy your Spark model to AZTK for batch processing/training/scoring
+### [1] Deploy your Spark model to AZTK for batch processing/training/scoring
 AZTK allows you to deploy, manage and run Apache Spark clusters in a simple and cost-efficient way. 
 
 AZTK has two primary _modes_: interactive mode and job-submission mode. The difference between these two modes is that interactive mode lets users manage their Spark clusters while job-submission mode will automatically provision/deprovision your cluster based on the job. 
@@ -26,7 +32,7 @@ Please see this architecture [link] reference for a full end-to-end batch scorin
 
 For additional details about AZTK, please visit the [AZTK repo](https://www.github.com/azure/aztk).
 
-## [2] Deploy your DL model to BatchAI for batch scoring
+### [2] Deploy your DL model to BatchAI for batch scoring
 BatchAI allows you to deploy, manage and run compute intensive deep learning jobs in a cost-efficient way.
 
 - [2_0] Deploy a CPU or GPU enabled BatchAI cluster from your local machine
@@ -39,7 +45,7 @@ Please see this architecture [link] reference for a full end-to-end batch scorin
 
 For an End-to-End Anomaly Detection scenario using Azure Batch AI, please refer to this: https://github.com/saidbleik/batchai_mm_ad
 
-## [3] Deploy your DL model to AKS for real-time request/response workloads
+### [3] Deploy your DL model to AKS for real-time request/response workloads
 Deploying to AKS is most suited for real-time request/response workloads. 
 
 See this repo (https://github.com/Microsoft/AKSDeploymentTutorial) to talk through the following steps:
