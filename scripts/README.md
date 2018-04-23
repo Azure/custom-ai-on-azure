@@ -1,5 +1,9 @@
 # Scripts 
 
+The following scripts are designed to highlight canonical scenarios when running AI workloads on Azure's IaaS++ stack. This section is focused on deploying and configuring Azure infrastructure as opposed to demonstrating complex applications of machine learning and AI. 
+
+Not all scripts/notebooks below use data. However, the scripts that do use data will use the canonical housing prices dataset located in a public Azure Blob: https://ai-on-iaas-pp.blob.core.windows.net/sample-data
+
 ### [0] Using Azure Functions to provision a DSVM for periodic batch scoring
 Azure functions can be used with the DSVM to automate your batch scoring jobs.
 
