@@ -3,19 +3,19 @@ The AI on IaaS++ toolkit is a set of utility scripts, tutorials, and recommended
 
 [__Scripts__](./scripts)
 
-A set of scripts that you can use to deploy your AI solutions on Azure's AI on IaaS++. This includes scripts for experimentation/training and operationalization/scoring.
+In this toolkit, we provide a set of scripts that you can use to deploy your AI solutions on Azure's AI on IaaS++. This includes scripts for experimentation/training and operationalization/scoring. These scripts can be use as utilities to help you easily deploy and setup your environments in Azure.
 
 [__Tutorials__](./tutorials)
 
-An aggregration of tutorials created by data scientists and data engineers in Microsoft. 
+This toolkit includes an aggregration of tutorials created by data scientists and data engineers in Microsoft. These tutorials were developed along real customer scenarios. They cover end-to-end scenarios covering both the data science portions and how these solutions would be be operationalized.
 
 [__Recommended Architectures__](./architectures)
 
-An aggregation of recommended architectures that have been deployed by real Microsoft customers.
+This toolkit includes an aggregation of recommended architectures that have been deployed by real Microsoft customers. These architectures should be used along side the scripts provided by this repo and give you a better idea of the broader end-to-end solution.
 
 [__Compute Platforms__](./compute-platforms)
 
-A short guide on which compute platforms in Azure to use.
+When it comes to choosing which tools to use in Azure, customers are often left confused by the myriad of options. This section of the toolkit is a short guide on which compute platforms in Azure to use and introduces a simple framework for making these decisions.
 
 ---
 
