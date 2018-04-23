@@ -10,7 +10,6 @@ This repo assumes a level of proficiency in Azure and is targeted for seasoned d
 2. [Experimentation & Model Development](#experimentation-&-model-development)
 3. [Operationalization & Model Deployment](#operationalization-&-model-deployment)
 4. [Choosing your Compute Platform](#choosing-your-compute-platform)
-    - [Additional Considerations](#choosing-your-compute-platform-additional-considerations)
 5. [Contributing](#contributing)
 
 ## 1. Introduction <a name="introduction"></a>
