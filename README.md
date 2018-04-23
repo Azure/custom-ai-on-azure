@@ -15,7 +15,7 @@ This toolkit includes an aggregration of tutorials created by data scientists an
 
 This toolkit includes an aggregation of recommended architectures that have been deployed by real Microsoft customers. These architectures should be used along side the scripts provided by this repo and give you a better idea of the broader end-to-end solution.
 
-[__Compute Platforms__](./compute-platforms)
+[__Compute Platforms__](./compute-platforms.md)
 
 When it comes to choosing which tools to use in Azure, customers are often left confused by the myriad of options. This section of the toolkit is a short guide on which compute platforms in Azure to use and introduces a simple framework for making these decisions.
 
