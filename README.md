@@ -19,7 +19,8 @@ When it comes to choosing which tools to use in Azure, customers are often left 
 
 ---
 
-### What is Azure's AI IaaS++ stack? <a name="what"></a>
+__What is Azure's AI IaaS++ stack?__
+
 Today in Azure, there are a myriad of tools and services that were designed for AI workloads. However, for a data scientist new to Azure, there are several entry points where on can start to develop and eventually deploy their AI solutions. 
 
 | Tier         | Name   | Services                                       |
@@ -30,7 +31,8 @@ Today in Azure, there are a myriad of tools and services that were designed for 
 
 This toolkit focuses on the middle tier illustrated in the table above.
 
-### Why use Azure's AI IaaS++ stack? <a name="why"></a>
+__Why use Azure's AI IaaS++ stack?__
+
 Customers can choose to use Azure at each layer of the stack. Each layer has its own mix of benefits and limitations. 
 
 Generally speaking, users may want to use the Azure's AI IaaS++ stack -- as opposed to Azure's AI PaaS stack -- because they want to build their AI solution in a less opinionated, more flexible & customizable, and more cloud-agnostic manner. Additionally, the tools and services in the AI IaaS++ stack tends to be more generally available (in regions) and often adheres to higher compliance and security requirements. 
