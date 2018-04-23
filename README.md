@@ -1,19 +1,15 @@
 # AI on IaaS++ Toolkit
-[repo is currently under construction]
+The AI on IaaS++ toolkit is a set of utility scripts, tutorials, and recommended architectures to deploy production code on Azure's AI IaaS++ stack. This repo assumes a level of proficiency in Azure and is targeted for seasoned data engineers and data scientists.
 
-The AI on IaaS++ toolkit is a set of utility scripts, tutorials, and recommended architectures to deploy production code on Azure's AI IaaS++ stack.
+__Scripts__: This repo provides a list of scripts that you can use to deploy your 
 
-This repo assumes a level of proficiency in Azure and is targeted for seasoned data engineers and data scientists.
+__Tutorials__: An aggregration of tutorials created by data scientists and data engineers in Microsoft. 
 
-## Table of Content
-1. [Introduction](#introduction)
-2. [Scripts](#experimentation-&-model-development)
-3. [Tutorials](#operationalization-&-model-deployment)
-4. [Architectures](#choosing-your-compute-platform)
-5. [Choosing your Compute Platform](#choosing-your-compute-platform)
-6. [Contributing](#contributing)
+__Recommended Architectures__: An aggregation of recommended architectures that have been deployed by real Microsoft customers.
 
-## 1. Introduction <a name="introduction"></a>
+__Compute Platforms__: A guide on which compute platforms in Azure to use.
+
+---
 
 ### What is Azure's AI IaaS++ stack? <a name="what"></a>
 Today in Azure, there are a myriad of tools and services that were designed for AI workloads. However, for a data scientist new to Azure, there are several entry points where on can start to develop and eventually deploy their AI solutions. 
@@ -40,32 +36,7 @@ Generally speaking, users may want to use the Azure's AI IaaS++ stack -- as oppo
 
 *The table above compares IaaS, IaaS++, and PaaS in a general sense. Individual services or tools belonging to each category may not strictly adhere to the table above.
 
-## 2. Scripts <a name="experimentation-&-model-development"></a>
-When experimenting and developing a model, data scientists want to optimize their own time and reduce the friction of installing software, provision infrastructure, and moving data. 
-
-Visit the [tutorial page for experimentation](tutorials_experimentation) for more details.
-
-## 3. Tutorials <a name="operationalization-&-model-deployment"></a>
-When deploying your model and operationalizing your AI solution in Azure, it can confusing to choose from Azure's vast set of resources, services, and tools. 
-
-Below are a few canonical __single-node__ scenarios:
-- Deploy a web-service (flask) on your DSVM for real-time scoring
-- Using Azure Functions to provision a DSVM for periodic batch scoring
-
-Below are a few canonical __scale-out__ scenarios:
-- Deploy your Spark model to AZTK for batch processing/training/scoring
-- Deploy your Tensorflow model to BatchAI for batch training using GPUs
-- Deploy your Tensorflow model to AKS for real-time request/response scoring
-
-Visit the [tutorial page for operationalization](tutorials_operationalization) for more details.
-
-## 4. Architectures <a name=""></a>
-Here are arhictectures.
-
-## 5. Choosing your Compute Platform <a name="choosing-your-compute-platform"></a>
-Azure's AI IaaS++ stack offers many different flexible compute platforms. Often times it is confusing to choose which to use for the scenario at hand. Below are two decision tree to provide guidance on which compute platform to use in different scenarios. 
-
-## 6. Contributing <a name="contributing"></a>
+## Contributing <a name="contributing"></a>
 
 This project welcomes contributions and suggestions.  Most contributions require you to agree to a
 Contributor License Agreement (CLA) declaring that you have the right to, and actually do, grant us
