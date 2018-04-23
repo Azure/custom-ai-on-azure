@@ -31,7 +31,7 @@ The tutorial should follow the below guidelines:
 
 __Content__
 
-The content of the tutorial must include a real AI scenario, showing how the model is created as well as how the model is deployed into Azure. When adding your tutorial to this page, please be cognizant of the two categories on this page: __Experimentation & Model Development__ and __Operationalization & Model Deployment__ and select the appropriate category for your tutorial.
+The content of the tutorial must include a real AI scenario, showing how the model is created as well as how the model is deployed into Azure. 
 
 __Notebooks__ 
 
