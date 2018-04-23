@@ -1,9 +1,7 @@
-# How to add tutorial to this repository
-In order to add a tutorial to this repo, you must make a pull-request to edit this page. 
+## How to add your tutorial to this repository
+In order to add a tutorial to this repository, you must make a pull-request to edit this page. 
 
-__Adding your tutorial to this page__
-
-When adding your tutorial to this page, make sure you follow the below convention:
+When adding your tutorial, make sure you follow the below convention:
 
 ```
 ### [<My Tutorial Name>](url_to_tutorial)
