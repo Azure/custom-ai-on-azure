@@ -4,53 +4,36 @@ The following scripts are designed to highlight canonical scenarios when running
 
 Not all scripts/notebooks below use data. However, the scripts that do use data will use the canonical housing prices dataset located in a public Azure Blob: https://ai-on-iaas-pp.blob.core.windows.net/sample-data
 
-### [0] Using Azure Functions to provision a DSVM for periodic batch scoring
-Azure functions can be used with the DSVM to automate your batch scoring jobs.
+The below sections are organized by common scenarios around experimentation and operationalization. 
 
-- [0_0] Deploy your DSVM from Azure Functions
-- [0_1] Automate your Azure Function to read & write data from Blob Storage
+## Experimentation + Model Development
 
-Please see this architecture [link] reference for a full end-to-end batch scoring sceanrio with Spark on AZTK.
+__[[0-1] Running Tensorflow/Keras/Pytorch on a GPU-enabled VM](./0-1.md)__
 
-### [1] Deploy your Spark model to AZTK for batch processing/training/scoring
-AZTK allows you to deploy, manage and run Apache Spark clusters in a simple and cost-efficient way. 
+Use your favorite deep-learning framework on an GPU-enabled VM and start experimenting and developing your model. These scripts will help you deploy and configure your VM, and show you how to run a simple model using Keras.
 
-AZTK has two primary _modes_: interactive mode and job-submission mode. The difference between these two modes is that interactive mode lets users manage their Spark clusters while job-submission mode will automatically provision/deprovision your cluster based on the job. 
+__[[0-2] Using a multi-node Spark cluster to train your SparkML model at scale](./0-2.md)__
 
-Unless otherwise stated, this set of tutorials will use AZTK's interactive mode.
+Often times, a single node doesn't have enough memory to train your model. These scripts show you how to easily deploy a multi-node Spark cluster using AZTK, and how to work interactively with that cluster.
 
-- [[1_0] Deploy a CPU or GPU enabled AZTK Spark cluster from your local machine](/tutorials_operationalization/1_0.md)
-- [1_1] Setting up your AZTK Spark cluster to read/write data from Azure Blob
-- [1_2] Use AZTK's run jupyter notebooks and the Spark UI
-- [1_3] Use Azure Functions to automate your AZTK batch job using AZTK's job-submission mode
-- [1_4] [Enterprise-Ready] Deploy your AZTK clusters in a Virtual Network
+__[[0-3] Another common scenario for model development](./0-3.md)__
 
-Please see this architecture [link] reference for a full end-to-end batch scoring sceanrio with Spark on AZTK.
+Another sentence or two that will outline the scenario and what these set of scripts will go over. This is the second sentence of the description to give you a sense of how long descriptions should be.
 
-For additional details about AZTK, please visit the [AZTK repo](https://www.github.com/azure/aztk).
+## Operationalization + Model Deployment
 
-### [2] Deploy your DL model to BatchAI for batch scoring
-BatchAI allows you to deploy, manage and run compute intensive deep learning jobs in a cost-efficient way.
+__[[1-1] Using Azure Functions to provision a DSVM for periodic batch scoring](./1-1.md)__
 
-- [2_0] Deploy a CPU or GPU enabled BatchAI cluster from your local machine
-- [2_1] Mount a fileshare to your BatchAI cluster
-- [2_2] Set up Tensorboard on BatchAI for monitoring your run history
-- [2_3] Use Azure Functions to automate your DL jobs 
-- [2_4] Use Azure Data Factory to automate your DL jobs
+Take advantage of Azure Functions to create a serverless process for doing periodic batch scoring. These scripts will provision a DSVM every 10 hours to score new data that comes in from Blob Storage.
 
-Please see this architecture [link] reference for a full end-to-end batch scoring sceanrio with Tensorflow on BatchAI.
+__[[1-2] Deploy a web service (Flask) to do real-time request/response scoring on a DSVM](./1-2.md)__
 
-For an End-to-End Anomaly Detection scenario using Azure Batch AI, please refer to this: https://github.com/saidbleik/batchai_mm_ad
+Another sentence or two that will outline the scenario and what these set of scripts will go over. This is the second sentence of the description to give you a sense of how long descriptions should be.
 
-### [3] Deploy your DL model to AKS for real-time request/response workloads
-Deploying to AKS is most suited for real-time request/response workloads. 
+__[[1-3] Run your Spark model across a cluster for batch scoring](./1-3.md)__
 
-See this repo (https://github.com/Microsoft/AKSDeploymentTutorial) to talk through the following steps:
-- Model development where we load the pretrained model and test it by using it to score images
-- Developing the interface our Flask app will use to load and call the model
-- Building the Docker Image with our Flask REST API and model
-- Testing our Docker image before deployment
-- Creating our Kubernetes cluster and deploying our application to it
-- Testing the deployed model
-- Testing the throughput of our model
+Another sentence or two that will outline the scenario and what these set of scripts will go over. This is the second sentence of the description to give you a sense of how long descriptions should be.
 
+__[[1-4] Deploy your DL model across a cluster for batch scoring](./1-4.md)__
+
+Another sentence or two that will outline the scenario and what these set of scripts will go over. This is the second sentence of the description to give you a sense of how long descriptions should be. 
