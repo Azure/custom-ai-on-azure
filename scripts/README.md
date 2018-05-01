@@ -8,7 +8,7 @@ The below sections are organized by common scenarios around experimentation and 
 
 ## Experimentation + Model Development
 
-__[[0-1] Running Tensorflow/Keras/Pytorch on a GPU-enabled VM](./0-1.md)__
+__[[0-1] Running Tensorflow/Keras/Pytorch on a GPU-enabled VM](./0-1)__
 
 Use your favorite deep-learning framework on an GPU-enabled VM and start experimenting and developing your model. These scripts will help you deploy and configure your VM, and show you how to run a simple model using Keras.
 
