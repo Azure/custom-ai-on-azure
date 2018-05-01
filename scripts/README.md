@@ -12,13 +12,19 @@ __[[0-1] Running Tensorflow/Keras/Pytorch on a GPU-enabled VM](./0-1.md)__
 
 Use your favorite deep-learning framework on an GPU-enabled VM and start experimenting and developing your model. These scripts will help you deploy and configure your VM, and show you how to run a simple model using Keras.
 
+__Azure Technologies__: Azure DSVM
+
 __[[0-2] Using a multi-node Spark cluster to train your SparkML model at scale](./0-2.md)__
 
 Often times, a single node doesn't have enough memory to train your model. These scripts show you how to easily deploy a multi-node Spark cluster using AZTK, and how to work interactively with that cluster.
 
+__Azure Technologies__: AZTK
+
 __[[0-3] Another common scenario for model development](./0-3.md)__
 
 Another sentence or two that will outline the scenario and what these set of scripts will go over. This is the second sentence of the description to give you a sense of how long descriptions should be.
+
+__Azure Technologies__: Some tech, some other tech
 
 ## Operationalization + Model Deployment
 
