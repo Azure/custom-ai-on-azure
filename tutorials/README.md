@@ -21,7 +21,7 @@ Visit [this page](./contribute.md) for instructions on how to add your tutorial 
 | Opensource tools | Scikit-Learn, cron, SQL |
 | Description | This walkthrough shows how an end-to-end anomaly detection system can be implemented for IoT use cases. The solution is built on Microsoft's Azure stack and includes multiple cloud services that allow handling data streaming, data processing, model training/predicting, and data storage. The main component here is Batch AI, a cloud service that enables users to submit parallel jobs to a cluster of high performing virtual machines. |
 
-### [Scale out your Parallel R job on Azure Batch](https://docs.microsoft.com/en-us/azure/batch/tutorial-r-doazureparallel)
+### [Scale out your Monte Carlo Simulations (with R) on Azure Batch](https://docs.microsoft.com/en-us/azure/batch/tutorial-r-doazureparallel)
 | | |
 | :-- | --- |
 | Date of Posting  | 01/23/2018 |
