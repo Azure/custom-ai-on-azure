@@ -1,52 +1,52 @@
-# AI on IaaS++ Toolkit
-The AI on IaaS++ toolkit is a set of utility scripts, tutorials, and recommended architectures to deploy production code on Azure's AI IaaS++ stack. This repo assumes a level of proficiency in Azure and is targeted for seasoned data engineers and data scientists.
+# Custom AI on Azure
+The repository is a set of utility scripts, tutorials, and recommended architectures to deploy production custom AI on Azure. This repo assumes a level of proficiency in Azure and is targeted for seasoned data engineers and data scientists.
 
 ## Toolkit Sections
 
 [__Scripts__](./scripts)
 
-In this toolkit, we provide a set of scripts that you can use to deploy your AI solutions on Azure's AI on IaaS++. This includes scripts for experimentation/training and operationalization/scoring. These scripts can be use as utilities to help you easily deploy and setup your environments in Azure.
+In this repository, we provide a set of scripts that you can use to deploy your AI solutions on Azure. This includes scripts for experimentation/training and operationalization/scoring. These scripts can be used as utilities to help you easily deploy your environments in Azure.
 
 [__Tutorials__](./tutorials)
 
-This toolkit includes an aggregration of tutorials created by data scientists and data engineers in Microsoft. These tutorials were developed along real customer scenarios. They cover end-to-end scenarios covering both the data science portions and how these solutions would be be operationalized.
+This section includes an aggregration of tutorials created by data scientists and data engineers in Microsoft. These tutorials were developed along real customer scenarios. They cover end-to-end scenarios covering both the data science portions and how these solutions would be be operationalized.
 
 [__Recommended Architectures__](./architectures)
 
-This toolkit includes an aggregation of recommended architectures that have been deployed by real Microsoft customers. These architectures should be used along side the scripts provided by this repo and give you a better idea of the broader end-to-end solution.
+This section is an aggregation of recommended architectures that have been deployed by real Microsoft customers. These architectures should be used along side the scripts provided by this repo and give you a better idea of the broader end-to-end solution.
 
 [__Compute Platforms__](./compute-platforms.md)
 
-When it comes to choosing which tools to use in Azure, customers are often left confused by the myriad of options. This section of the toolkit is a short guide on which compute platforms in Azure to use and introduces a simple framework for making these decisions.
+When it comes to choosing which tools to use in Azure, customers are often left confused by the myriad of options. This section is a short guide on which compute platforms in Azure to use and introduces a simple framework for making these decisions.
 
 ## What and Why 
 
-__What is Azure's AI IaaS++ stack?__
+__What is Custom AI on Azure?__
 
 Today in Azure, there are a myriad of tools and services that were designed for AI workloads. However, for a data scientist new to Azure, there are several entry points where on can start to develop and eventually deploy their AI solutions. 
 
-| Tier         | Name   | Services                                       |
-|--------------|--------|------------------------------------------------|
-| Highest Tier | AI PaaS   | Databricks, AML                                |
-| **Middle Tier**  | **AI IaaS++** | **DSVM/DLVM, AZTK, BatchAI, AKS, Azure Functions** |
-| Lowest Tier  | IaaS   | Compute, Network, Storage                      |
+| Tier | Customizability | Audience | Services |
+|---|---|---|---|
+| Highest | Limited | Developers | Cognitive Services |
+| **Middle** | **Flexible** | **AI Developers** | **AML, DSVM/DLVM, AZTK, BatchAI, AKS, Azure Functions, Data Factory** |
+| Lowest Tier | Maximal | IT | Compute, Network, Storage |
 
 This toolkit focuses on the middle tier illustrated in the table above.
 
-__Why use Azure's AI IaaS++ stack?__
+__Why use Custom AI on Azure?__
 
-Customers can choose to use Azure at each layer of the stack. Each layer has its own mix of benefits and limitations. 
+Customers can choose to use Azure at any layer of the stack. Each layer has its own mix of benefits and limitations. 
 
-Generally speaking, users may want to use the Azure's AI IaaS++ stack -- as opposed to Azure's AI PaaS stack -- because they want to build their AI solution in a less opinionated, more flexible & customizable, and more cloud-agnostic manner. Additionally, the tools and services in the AI IaaS++ stack tends to be more generally available (in regions) and often adheres to higher compliance and security requirements. 
+Generally speaking, users may want to use the Custom AI on Azure because they want to build their AI solution on flexible & customizable way, yet not have to worry about managing their infrastructure. Additionally, many of the tools and services in the Custom AI on Azure stack tends to be more generally available (across regions) and often adheres to higher compliance and security requirements. 
 
-| | IaaS | AI IaaS++ | AI PaaS | 
+| | Pure IaaS | Custom AI on Azure Stack | Cognitive Services | 
 | --- | --- | --- | --- |
 | Compliance & Security | Mature | Mature | Less Mature |
 | Costs | Low | Low | High |
 | Flexibility & Customizibility | High | High | Low |
 | Availability | Mature | Mature | Less Mature |
 
-*The table above compares IaaS, IaaS++, and PaaS in a general sense. Individual services or tools belonging to each category may not strictly adhere to the table above.
+*The table above compares the categories in a general sense. Individual services or tools belonging to each category may not strictly adhere to the table above.
 
 ## Contributing <a name="contributing"></a>
 
