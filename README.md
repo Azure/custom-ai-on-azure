@@ -27,7 +27,7 @@ Today in Azure, there are a myriad of tools and services that were designed for 
 
 | Tier | Customizability | Audience | Services |
 |---|---|---|---|
-| Highest | Limited | Developers | Cognitive Services |
+| Highest | Limited | Developers | Cognitive Services, Azure Search, Bot Framework |
 | **Middle** | **Flexible** | **AI Developers** | **AML, DSVM/DLVM, AZTK, BatchAI, AKS, Azure Functions, Data Factory** |
 | Lowest Tier | Maximal | IT | Compute, Network, Storage |
 
