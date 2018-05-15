@@ -4,7 +4,7 @@ This repository is a collection of scripts and tutorials to help AI developers e
 ## Learning Paths
 The learning paths below reflect guides on best practices for developing custom AI on Azure. While the learning paths below do not capture all possible options for each scenario, the below paths represent our general recommendation for the generic case.
 
-![Learning Paths](assets/custom-ai-on-azure-diagram.png)
+![Learning Paths](assets/custom-ai-on-azure-diagram.PNG)
 
 ### [1] Experimentation & Training
 When developing your model, you want to optimize your experience around the ability to experiment and train your models, while maintaining as much flexibility as possible without locking yourself into any particular toolkit. The following is segmented into running your experimentation and training workloads on a single-node vs multiple-nodes, each remaining agnostic to the type of work your doing.
