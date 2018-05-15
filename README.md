@@ -1,23 +1,29 @@
 # Custom AI on Azure
-The repository is a set of utility scripts, tutorials, and recommended architectures to deploy production custom AI on Azure. This repo assumes a level of proficiency in Azure and is targeted for seasoned data engineers and data scientists.
+This repository is a collection of scripts and tutorials to help AI developers effectively use Azure for their AI workloads. In this repository, we explore several key paths when developing custom AI on Azure. Each path will provide infrastructure guidance, scripts for deployment, and tutorials to educate readers in a step-by-step fashion.
 
-## Toolkit Sections
+## Paths
 
-[__Scripts__](./scripts)
+![Learning Paths](assets/custom-ai-on-azure-diagram.png)
 
-In this repository, we provide a set of scripts that you can use to deploy your AI solutions on Azure. This includes scripts for experimentation/training and operationalization/scoring. These scripts can be used as utilities to help you easily deploy your environments in Azure.
+### [1] Experimentation & Training
 
-[__Tutorials__](./tutorials)
+__[1-1] Single-node training/experimentation: DVSM__
 
-This section includes an aggregration of tutorials created by data scientists and data engineers in Microsoft. These tutorials were developed along real customer scenarios. They cover end-to-end scenarios covering both the data science portions and how these solutions would be be operationalized.
+__[1-2] Multi-node training/experimentation: DSVM + BatchAI__
 
-[__Recommended Architectures__](./architectures)
+### [2] Scoring & Inference
 
-This section is an aggregation of recommended architectures that have been deployed by real Microsoft customers. These architectures should be used along side the scripts provided by this repo and give you a better idea of the broader end-to-end solution.
+__[2-1] Real-time scoring with machine learning models using Spark__
 
-[__Compute Platforms__](./compute-platforms.md)
+__[2-2] Real-time scoring with machine learning models without using Spark__
 
-When it comes to choosing which tools to use in Azure, customers are often left confused by the myriad of options. This section is a short guide on which compute platforms in Azure to use and introduces a simple framework for making these decisions.
+__[2-3] Batch scoring with machine learning models using Spark__
+
+__[2-4] Batch scoring with machine learning models without usuing Spark__
+
+__[2-5] Real-time scoring with deep learning models__
+
+__[2-6] Batch scoring with deep learning models__
 
 ## What and Why 
 
