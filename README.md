@@ -4,7 +4,7 @@ This repository is a collection of scripts and tutorials to help AI developers e
 ## Learning Paths
 The learning paths below reflect guides on best practices for developing custom AI on Azure. While the learning paths below do not capture all possible options for each scenario, the below paths represent our general recommendation for the generic case.
 
-![Learning Paths](assets/custom-ai-on-azure-diagram.PNG)
+![Learning Paths](assets/custom-ai-on-azure-diagram.png)
 
 ### [[1-1] Single-node training/experimentation](1-1)
 
