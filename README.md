@@ -29,29 +29,35 @@ Technologies: [BatchAI](TODO)
 Scoring and Inferencing workloads are setup to bring a model into production. This section pivots on ML vs DL, data-parallel vs not-data-parallel, and real-time vs batch. These pivots were selected because they have implications the infrastructure you use in Azure.
 
 [__[2-1] Real-time scoring with machine learning models__](2-1)
+
 This learning path shows you how to set up AML so that you can score your machine learning models in real-time. Often times, scoring of machine learning models takes in some form of structured data as input, thus the networking and compute requirements are relatively small, making AML an ideal platform to score your models with.
 
 Technologies: [AML](TODO)
 
 [__[2-2] Batch scoring with machine learning models__](2-2)
+
 This learning path shows you how to set up Batch AI so that you can run batch scoring jobs on your machine learning models. For many scenarios, it is common to do a batch scoring job across all new data so that the results can be used the next day.
 
 Technologies: [BatchAI](TODO)
 
 [__[2-3] Real-time scoring with machine learning models with high data parallelism__](2-3)
+
 TODO
 
 [__[2-4] Batch scoring with machine learning models with high data parallelism__](2-4)
+
 This learning path shows you how to set up AZTK (Azure Distributed Data Engineering Toolkit) so that you can create on-demand Spark clusters for batch scoring/inferencing jobs.
 
 Technologies: [AZTK](TODO)
 
 [__[2-5] Real-time scoring with deep learning models__](2-5)
+
 This learning path shows you how to set up AKS (Azure Kubernetes Service) so that you can provision Kubernetes clusters for performing high-throughput scoring in real-time. Because AKS can be set up with GPUs, this configuration will enable high throughput with low latency, providing you a powerful platform for real-time scoring.
 
 Technologies: [AKS](TODO)
 
 [__[2-6] Batch scoring with deep learning models__](2-6)
+
 This learning path shows you how to set up a BatchAI cluster on-demand so that you can perform large-scale batch scoring and inferencing jobs. BatchAI takes advantage of low-priority VMs which helps you work through large datasets at a low cost.
 
 Technologies: [BatchAI](TODO)
