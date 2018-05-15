@@ -6,10 +6,7 @@ The learning paths below reflect guides on best practices for developing custom 
 
 ![Learning Paths](assets/custom-ai-on-azure-diagram.PNG)
 
-### [1] Experimentation & Training
-When developing your model, you want to optimize your experience around the ability to experiment and train your models, while maintaining as much flexibility as possible without locking yourself into any particular toolkit. The following is segmented into running your experimentation and training workloads on a single-node vs multiple-nodes, each remaining agnostic to the type of work your doing.
-
-[__[1-1] Single-node training/experimentation__](1-1)
+### [[1-1] Single-node training/experimentation](1-1)
 
 In the most basic scenario for training and experimentation, AI developers come to Azure with the goal of building out a model that they can eventually put into production. Often times, with these models can be developed on a single machine, with the option of parallelizing across the multiple cores on a single VM. 
 
@@ -17,7 +14,7 @@ This learning path shows you how to set up an Azure DSVM so that you can run R o
 
 Technologies: [Azure DSVM](TODO)
 
-[__[1-2] Multi-node training/experimentation__](1-2)
+### [[1-2] Multi-node training/experimentation](1-2)
 
 Sometimes, training and experimentation workloads are slowed down because of the limitations of running on a single machine. In order to accelerate model development, and help AI developers to more easily run more tests, AI developers may want to expand their compute surface to span multiple nodes. This not only helps users to speed up their testing, but also gives them the opportunity to use larger datasets.
 
@@ -25,38 +22,35 @@ This learning path shows you how to set up an interactive session with BatchAI s
 
 Technologies: [BatchAI](TODO)
 
-### [2] Scoring & Inference
-Scoring and Inferencing workloads are setup to bring a model into production. This section pivots on ML vs DL, data-parallel vs not-data-parallel, and real-time vs batch. These pivots were selected because they have implications the infrastructure you use in Azure.
-
-[__[2-1] Real-time scoring with machine learning models__](2-1)
+### [[2-1] Real-time scoring with machine learning models](2-1)
 
 This learning path shows you how to set up AML so that you can score your machine learning models in real-time. Often times, scoring of machine learning models takes in some form of structured data as input, thus the networking and compute requirements are relatively small, making AML an ideal platform to score your models with.
 
 Technologies: [AML](TODO)
 
-[__[2-2] Batch scoring with machine learning models__](2-2)
+### [[2-2] Batch scoring with machine learning models](2-2)
 
 This learning path shows you how to set up Batch AI so that you can run batch scoring jobs on your machine learning models. For many scenarios, it is common to do a batch scoring job across all new data so that the results can be used the next day.
 
 Technologies: [BatchAI](TODO)
 
-[__[2-3] Real-time scoring with machine learning models with high data parallelism__](2-3)
+### [[2-3] Real-time scoring with machine learning models with high data parallelism](2-3)
 
 TODO
 
-[__[2-4] Batch scoring with machine learning models with high data parallelism__](2-4)
+### [[2-4] Batch scoring with machine learning models with high data parallelism](2-4)
 
 This learning path shows you how to set up AZTK (Azure Distributed Data Engineering Toolkit) so that you can create on-demand Spark clusters for batch scoring/inferencing jobs.
 
 Technologies: [AZTK](TODO)
 
-[__[2-5] Real-time scoring with deep learning models__](2-5)
+### [[2-5] Real-time scoring with deep learning models](2-5)
 
 This learning path shows you how to set up AKS (Azure Kubernetes Service) so that you can provision Kubernetes clusters for performing high-throughput scoring in real-time. Because AKS can be set up with GPUs, this configuration will enable high throughput with low latency, providing you a powerful platform for real-time scoring.
 
 Technologies: [AKS](TODO)
 
-[__[2-6] Batch scoring with deep learning models__](2-6)
+### [[2-6] Batch scoring with deep learning models](2-6)
 
 This learning path shows you how to set up a BatchAI cluster on-demand so that you can perform large-scale batch scoring and inferencing jobs. BatchAI takes advantage of low-priority VMs which helps you work through large datasets at a low cost.
 
