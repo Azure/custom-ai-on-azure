@@ -1,25 +1,69 @@
 # Custom AI on Azure
-The repository is a set of utility scripts, tutorials, and recommended architectures to deploy production custom AI on Azure. This repo assumes a level of proficiency in Azure and is targeted for seasoned data engineers and data scientists.
+This repository is a collection of scripts and tutorials to help AI developers effectively use Azure for their AI workloads. In this repository, we explore several key paths when developing custom AI on Azure. Each path will provide infrastructure guidance, scripts for deployment, and tutorials to educate readers in a step-by-step fashion.
 
-## Toolkit Sections
+## Learning Paths
+The learning paths below reflect guides on best practices for developing custom AI on Azure. While the learning paths below do not capture all possible options for each scenario, the below paths represent our general recommendation for the generic case.
 
-[__Scripts__](./scripts)
+![Learning Paths](assets/custom-ai-on-azure-diagram.png)
 
-In this repository, we provide a set of scripts that you can use to deploy your AI solutions on Azure. This includes scripts for experimentation/training and operationalization/scoring. These scripts can be used as utilities to help you easily deploy your environments in Azure.
+### [1] Experimentation & Training
+When developing your model, you want to optimize your experience around the ability to experiment and train your models, while maintaining as much flexibility as possible without locking yourself into any particular toolkit. The following is segmented into running your experimentation and training workloads on a single-node vs multiple-nodes, each remaining agnostic to the type of work your doing.
 
-[__Tutorials__](./tutorials)
+[__[1-1] Single-node training/experimentation__](1-1)
 
-This section includes an aggregration of tutorials created by data scientists and data engineers in Microsoft. These tutorials were developed along real customer scenarios. They cover end-to-end scenarios covering both the data science portions and how these solutions would be be operationalized.
+In the most basic scenario for training and experimentation, AI developers come to Azure with the goal of building out a model that they can eventually put into production. Often times, with these models can be developed on a single machine, with the option of parallelizing across the multiple cores on a single VM. 
 
-[__Recommended Architectures__](./architectures)
+This learning path shows you how to set up an Azure DSVM so that you can run R or Python code and start working on building your model in the cloud.
 
-This section is an aggregation of recommended architectures that have been deployed by real Microsoft customers. These architectures should be used along side the scripts provided by this repo and give you a better idea of the broader end-to-end solution.
+Technologies: [Azure DSVM](TODO)
 
-[__Compute Platforms__](./compute-platforms.md)
+[__[1-2] Multi-node training/experimentation__](1-2)
 
-When it comes to choosing which tools to use in Azure, customers are often left confused by the myriad of options. This section is a short guide on which compute platforms in Azure to use and introduces a simple framework for making these decisions.
+Sometimes, training and experimentation workloads are slowed down because of the limitations of running on a single machine. In order to accelerate model development, and help AI developers to more easily run more tests, AI developers may want to expand their compute surface to span multiple nodes. This not only helps users to speed up their testing, but also gives them the opportunity to use larger datasets.
 
-## What and Why 
+This learning path shows you how to set up an interactive session with BatchAI so that you can run your experiments and training workloads at scale in the cloud.
+
+Technologies: [BatchAI](TODO)
+
+### [2] Scoring & Inference
+Scoring and Inferencing workloads are setup to bring a model into production. This section pivots on ML vs DL, data-parallel vs not-data-parallel, and real-time vs batch. These pivots were selected because they have implications the infrastructure you use in Azure.
+
+[__[2-1] Real-time scoring with machine learning models__](2-1)
+
+This learning path shows you how to set up AML so that you can score your machine learning models in real-time. Often times, scoring of machine learning models takes in some form of structured data as input, thus the networking and compute requirements are relatively small, making AML an ideal platform to score your models with.
+
+Technologies: [AML](TODO)
+
+[__[2-2] Batch scoring with machine learning models__](2-2)
+
+This learning path shows you how to set up Batch AI so that you can run batch scoring jobs on your machine learning models. For many scenarios, it is common to do a batch scoring job across all new data so that the results can be used the next day.
+
+Technologies: [BatchAI](TODO)
+
+[__[2-3] Real-time scoring with machine learning models with high data parallelism__](2-3)
+
+TODO
+
+[__[2-4] Batch scoring with machine learning models with high data parallelism__](2-4)
+
+This learning path shows you how to set up AZTK (Azure Distributed Data Engineering Toolkit) so that you can create on-demand Spark clusters for batch scoring/inferencing jobs.
+
+Technologies: [AZTK](TODO)
+
+[__[2-5] Real-time scoring with deep learning models__](2-5)
+
+This learning path shows you how to set up AKS (Azure Kubernetes Service) so that you can provision Kubernetes clusters for performing high-throughput scoring in real-time. Because AKS can be set up with GPUs, this configuration will enable high throughput with low latency, providing you a powerful platform for real-time scoring.
+
+Technologies: [AKS](TODO)
+
+[__[2-6] Batch scoring with deep learning models__](2-6)
+
+This learning path shows you how to set up a BatchAI cluster on-demand so that you can perform large-scale batch scoring and inferencing jobs. BatchAI takes advantage of low-priority VMs which helps you work through large datasets at a low cost.
+
+Technologies: [BatchAI](TODO)
+
+
+## FAQ: What and Why?
 
 __What is Custom AI on Azure?__
 
